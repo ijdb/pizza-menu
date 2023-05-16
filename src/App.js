@@ -8,6 +8,7 @@ function App() {
   const [pizzaMenu, setPizzaMenu] = useState(false);
   const [burgerMenu, setBurgerMenu] = useState(false);
   const [showTitle, setShowTitle] = useState(true);
+
   const pizzaData = [
     {
       image: "https://assets.nicepagecdn.com/d2cc3eaa/3955079/images/45.jpg",
@@ -176,6 +177,7 @@ function App() {
     closeAll();
     setShowTitle(true);
   }
+
   return (
     <>
       <MainPage

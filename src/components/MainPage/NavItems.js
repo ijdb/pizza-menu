@@ -1,7 +1,13 @@
 import React from "react";
 import NavItemComponent from "./NavItemComponent";
 
-function NavItems({ pizzaHandler, burgerHandler, pizzaMenu, burgerMenu, homeClick }) {
+function NavItems({
+  pizzaHandler,
+  burgerHandler,
+  pizzaMenu,
+  burgerMenu,
+  homeClick,
+}) {
   return (
     <div className="nav-bar">
       <NavItemComponent
@@ -19,7 +25,9 @@ function NavItems({ pizzaHandler, burgerHandler, pizzaMenu, burgerMenu, homeClic
         clickHandler={burgerHandler}
         className={`${burgerMenu ? "active" : ""}`}
       />
-      <NavItemComponent name="Contact" />
+      <a href="#footer-section">
+        <NavItemComponent name="Contact" />
+      </a>
     </div>
   );
 }

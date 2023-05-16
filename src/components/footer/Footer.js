@@ -3,7 +3,7 @@ import "./footer.css";
 
 function Footer({ data }) {
   return (
-    <footer className="footer-section">
+    <footer className="footer-section" id="footer-section">
       {data.map((item) => (
         <div className="foot-con">
           <div className="icon">{item.icon()}</div>
