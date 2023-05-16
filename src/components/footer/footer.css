@@ -1,0 +1,30 @@
+.footer-section {
+    display: flex;
+    background-color: black;
+    color: white;
+    width: 100%;
+    justify-content: space-around;
+    padding: 80px 80px;
+    text-align: center;
+}
+
+.foot-con {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+}
+
+.foot-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.foot-greeting {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-size: 18px;
+}
+
+.end-text {
+    color: #F1AE12;
+}

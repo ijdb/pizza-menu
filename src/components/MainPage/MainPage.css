@@ -1,0 +1,48 @@
+
+
+/* main-page */
+.cafe-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.cafe-name {
+    color: #99E54D;
+    text-align: center;
+    font-size: 7rem;
+    align-self: center;
+    margin: 300px 0;
+}
+
+/* nav-bar */
+.nav-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 100px;
+    background-color: black;
+    position: fixed;
+    width: 100vw;
+}
+
+.item {
+    background-color: #99E54D;
+    width: fit-content;
+    padding: 8px 20px;
+    font-size: 22px;
+    font-weight: 500;
+    border: none;
+    border-radius: 25px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.item:hover {
+    color: #99E54D;
+    background-color: white;
+}
+
+.active {
+    color: #99E54D;
+    background-color: white;
+}
