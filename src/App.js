@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import PizzaList from "./components/Pizza/PizzaList";
 import MainPage from "./components/MainPage/MainPage";
 import Footer from "./components/footer/Footer";
-import { MdEmail } from "react-icons/md";
+import { MdEmail, MdLocationOn, MdPhone } from "react-icons/md";
 
 function App() {
   const [pizzaMenu, setPizzaMenu] = useState(false);
@@ -139,19 +139,19 @@ function App() {
   ];
   const footerData = [
     {
-      icon: MdEmail,
+      icon: () => <MdEmail />,
       name: "CHART TO US",
       greeting: "Our friendly team is here to help.",
       endText: "hi@ourcompany.com",
     },
     {
-      icon: "",
+      icon: () => <MdLocationOn />,
       name: "OFFICE",
       greeting: "Come say hello at our office HQ.",
       endText: "121 Rock Street, 21 Avenue, New York, NY",
     },
     {
-      icon: "",
+      icon: () => <MdPhone />,
       name: "PHONE",
       greeting: "Mon-Fri from 8am to 5am",
       endText: "+1(555) 000-000",
@@ -172,6 +172,10 @@ function App() {
     if (burgerMenu) setShowTitle(true);
     else setBurgerMenu(true);
   }
+  function handleHomeClick() {
+    closeAll();
+    setShowTitle(true);
+  }
   return (
     <>
       <MainPage
@@ -180,6 +184,7 @@ function App() {
         showTitle={showTitle}
         burgerHandler={handleBurgerClick}
         burgerMenu={burgerMenu}
+        homeClick={handleHomeClick}
       />
       {pizzaMenu && (
         <div className="container">

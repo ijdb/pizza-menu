@@ -7,6 +7,7 @@ function MainPage({
   burgerHandler,
   pizzaMenu,
   burgerMenu,
+  homeClick,
   showTitle = true,
 }) {
   return (
@@ -16,8 +17,15 @@ function MainPage({
         burgerHandler={burgerHandler}
         pizzaMenu={pizzaMenu}
         burgerMenu={burgerMenu}
+        homeClick={homeClick}
       />
-      {showTitle && <div className="cafe-name">Er Baretto</div>}
+
+      {showTitle && (
+        <>
+          <img className="bgimage" src="image.jpg" />
+          <div className="cafe-name">Er Baretto</div>
+        </>
+      )}
     </div>
   );
 }

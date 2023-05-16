@@ -1,11 +1,12 @@
 import React from "react";
 import NavItemComponent from "./NavItemComponent";
 
-function NavItems({ pizzaHandler, burgerHandler, pizzaMenu, burgerMenu }) {
+function NavItems({ pizzaHandler, burgerHandler, pizzaMenu, burgerMenu, homeClick }) {
   return (
     <div className="nav-bar">
       <NavItemComponent
         name="Home"
+        clickHandler={homeClick}
         className={`${!burgerMenu && !pizzaMenu ? "active" : ""}`}
       />
       <NavItemComponent
